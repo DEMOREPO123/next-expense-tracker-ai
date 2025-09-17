@@ -9,7 +9,6 @@ import Image from "next/image";
 
 export default async function HomePage() {
   const user = await currentUser();
-  console.log(user);
   if (!user) {
     return <Guest />;
   }
