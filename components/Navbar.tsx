@@ -128,7 +128,7 @@ export default function Navbar() {
                     appearance={{
                       elements: {
                         avatarBox:
-                          "w-6 h-6 sm:w-8 sm:h-8 hover:scale-110 transition-transform duration-200",
+                          "w-8 h-8 hover:scale-110 transition-transform duration-200",
                         userButtonBox: "flex items-center justify-center",
                       },
                     }}
