@@ -12,6 +12,7 @@
     "@clerk/nextjs": "^6.32.0",
     "@clerk/themes": "^2.4.19",
     "@prisma/client": "^6.16.1",
+    "@vercel/speed-insights": "^1.2.0",
     "chart": "^0.1.2",
     "chart.js": "^4.5.0",
     "next": "15.5.3",

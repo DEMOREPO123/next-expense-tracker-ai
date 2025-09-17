@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import ClerkThemeProvider from "@/components/ClerkThemProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
         transition-colors duration-300`}
       >
         <ThemeProvider>
+          <SpeedInsights />
           <ClerkThemeProvider>
             <Navbar />
             {children}
