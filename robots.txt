@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://next-expense-tracker-3272cpfh0-venkatesh-inamdars-projects.vercel.app/

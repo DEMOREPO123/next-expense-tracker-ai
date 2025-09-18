@@ -151,9 +151,9 @@ export async function categorizeExpense(description: string): Promise<string> {
         },
       ],
       temperature: 0.1,
-      max_tokens: 20,
+      max_tokens: 200,
     });
-
+    console.log(completion);
     const category = completion.choices[0].message.content?.trim();
 
     const validCategories = [
@@ -181,6 +181,7 @@ export async function generateAIAnswer(
   context: ExpenseRecord[]
 ): Promise<string> {
   try {
+    console.log("AI answer");
     const expensesSummary = context.map((expense) => ({
       amount: expense.amount,
       category: expense.category,
@@ -217,6 +218,7 @@ export async function generateAIAnswer(
       temperature: 0.7,
       max_tokens: 200,
     });
+    console.log(completion);
 
     const response = completion.choices[0].message.content;
     if (!response) {
